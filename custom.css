@@ -318,7 +318,8 @@ i {
     -webkit-text-stroke-color: rgba(255, 153, 0, 0.911);
 }
 
-.fas:hover {
+.fas:hover,
+fab:hover {
     animation: bigger .7s infinite
 }
 
