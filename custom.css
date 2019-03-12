@@ -36,6 +36,17 @@
     display: inline-block;
 }
 
+.separator-line {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 2px;
+    width: 80%;
+    background-image: linear-gradient(to bottom, #f90, #f90);
+    display: inline-block;
+}
+
 .first-letter {
     font-size: 130%;
     padding-right: 0px;
@@ -129,9 +140,24 @@
     border-collapse: collapse;
 }
 
-.skills-table>tbody>tr td {
-    padding: 15px;
-    text-transform: uppercase
+@media (min-width:620px) {
+    .skills-table>tbody>tr td {
+        padding: 15px;
+        text-transform: uppercase
+    }
+}
+
+@media (max-width:619px) {
+    .skills-table>tbody>tr td {
+        padding: 0px;
+        text-transform: uppercase
+    }
+}
+
+@media(max-width:420px) {
+    .skills-table>tbody>tr td {
+        font-size: 12px;
+    }
 }
 
 .skills-table>tbody>tr {
@@ -177,6 +203,23 @@
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 0.06em;
     -webkit-text-stroke-color: rgba(255, 153, 0, 0.911);
+}
+
+@media(max-width:500px) {
+    .job-header>.title {
+        text-align: left;
+        width: 45%;
+        float: left;
+        margin-right: 10px;
+    }
+    .job-header>.company {
+        text-align: center;
+        width: 40%;
+    }
+    .job-header>.date-period {
+        clear: both;
+        float: right;
+    }
 }
 
 .job>.address {
