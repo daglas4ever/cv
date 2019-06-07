@@ -243,6 +243,7 @@
     list-style: none;
 }
 
+
 .duty:before {
     content: "\2022";
     color: rgb(255, 123, 0);

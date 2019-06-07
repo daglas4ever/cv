@@ -1,139 +1,192 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <link href="custom.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="custom.css" type="text/css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <title>Mohammad Daghles - CV</title>
-    <meta name="google-site-verification" content="W5hPvly70e6VVAllMsvGbhoo9qiW3c1ZOqsqTZXzlZM" />
-</head>
+    <meta
+      name="google-site-verification"
+      content="W5hPvly70e6VVAllMsvGbhoo9qiW3c1ZOqsqTZXzlZM"
+    />
+  </head>
 
-<body style="min-width: 250px;">
+  <body style="min-width: 250px;">
     <div class="container">
-        <div class="header">
-            <div class="full-line"></div>
-            <div class="personal-info">
-                <button class="no-print print-btn" onclick="window.print();"> Print</button>
+      <div class="header">
+        <div class="full-line"></div>
+        <div class="personal-info">
+          <button class="no-print print-btn" onclick="window.print();">
+            Print
+          </button>
 
-                <h1 class="name">
-                    <span class="first-letter">M</span>OHAMMAD
-                    <span class="first-letter">D</span>AGHLAS
-                </h1>
-                <div class="contact">
-                    Tla’a al-Ali, Amman-Jordan| <a href="tel:+962796421918" style="text-decoration:none;color: black">
-                            079 642 1918
-                    </a> | <a href="mailto:m.daghlas@outlook.com" style="text-decoration:none;color: black">M.daghlas@outlook.com</a>
-                </div>
+          <h1 class="name">
+            <span class="first-letter">M</span>OHAMMAD
+            <span class="first-letter">D</span>AGHLAS
+          </h1>
+          <div class="contact">
+            Tla’a al-Ali, Amman-Jordan|
+            <a
+              href="tel:+962796421918"
+              style="text-decoration:none;color: black"
+            >
+              079 642 1918
+            </a>
+            |
+            <a
+              href="mailto:m.daghlas@outlook.com"
+              style="text-decoration:none;color: black"
+              >M.daghlas@outlook.com</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="objective" class="objective">
+        <h2 class="objective-title">
+          <span class="first-letter">O</span>BJECTIVE
+          <i class="fas fa-highlighter"></i>
+        </h2>
+        <div class="objective-describtion content-margin">
+          Developer looking for a position, where I can learn new technologies
+          and Sharpen my skills in problem solving.
+        </div>
+      </div>
+
+      <div class="separator-line"></div>
+
+      <div id="skills" class="skills">
+        <h2>
+          <span class="first-letter">S</span>KILLS
+          <i class="fas fa-atom"></i>
+        </h2>
+        <table class="skills-table content-margin">
+          <tbody>
+            <tr>
+              <td>Angular 2+</td>
+              <td>C# .Net</td>
+              <td>Unit of Work Design Pattern</td>
+              <td>SQL Relational DB</td>
+            </tr>
+            <tr>
+              <td>.Net Restful Web APIs</td>
+              <td>Problem Solving</td>
+              <td>MVC Framework</td>
+              <td>Entity Framework</td>
+            </tr>
+            <tr>
+              <td>Data Structures</td>
+              <td>Dependency Injection</td>
+              <td>HTML, CSS, JS, jQuery and Ajax</td>
+              <td>Knockout.Js</td>
+            </tr>
+            <tr>
+              <td>Data tables for jQuery</td>
+              <td>Signal R</td>
+              <td>SQL Table Dependency</td>
+              <td>JAVA SE</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="separator-line"></div>
+
+      <div id="experience" class="experience">
+        <h2>
+          <span class="first-letter">E</span>xperience
+          <i class="fab fa-earlybirds"></i>
+        </h2>
+        <ul class="content-margin">
+          <li class="job">
+            <div class="job-header">
+              <h3 class="title">.NET DEVELOPER</h3>
+              <h3 class="company">ROYAL SCIENTIFIC SOCIETY</h3>
+              <h3 class="date-period">2019/FEB – PRESENT</h3>
             </div>
-        </div>
+            <h5 class="address">
+              AMMAN, AL JUBAIHA - AHMAD AL TARAWNEH ST BLDNG.70
+            </h5>
+            <ul class="duties">
+              <li class="duty">
+                Development and Integration of an Educational System using .NET
+                MVC.
+              </li>
+              <li class="duty">
+                Created a component "Search Builder Tool" Which Generate Search
+                Pages Dynamically from the Database Based on a View or Table.
+                This tool Helped greatly into:
+                <ul style="margin-left:40px;margin-right:40px;list-style: square;font-style: italic;">
+                  <li>
+                    Reducing the Time it takes to build a Search Page.
+                  </li>
 
-        <div id="objective" class="objective">
-            <h2 class="objective-title">
-                <span class="first-letter">O</span>BJECTIVE
-                <i class="fas fa-highlighter"></i>
-            </h2>
-            <div class="objective-describtion content-margin">
-                Developer looking for a position, where I can learn new technologies and Sharpen my skills in problem solving.
-            </div>
-        </div>
-
-        <div class="separator-line"></div>
-
-
-        <div id="skills" class="skills">
-            <h2><span class="first-letter">S</span>KILLS
-                <i class="fas fa-atom"></i>
-            </h2>
-            <table class="skills-table content-margin">
-                <tbody>
-                    <tr>
-                        <td>Angular 2+</td>
-                        <td>C# .Net</td>
-                        <td>Unit of Work Design Pattern</td>
-                        <td>SQL Relational DB</td>
-                    </tr>
-                    <tr>
-                        <td>.Net Restful Web APIs</td>
-                        <td>Problem Solving</td>
-                        <td>MVC Framework</td>
-                        <td>Entity Framework</td>
-                    </tr>
-                    <tr>
-                        <td>Data Structures</td>
-                        <td>Dependency Injection</td>
-                        <td>HTML, CSS, JS, jQuery and Ajax</td>
-                        <td>Knockout.Js </td>
-                    </tr>
-                    <tr>
-                        <td>Data tables for jQuery</td>
-                        <td>Signal R</td>
-                        <td>SQL Table Dependency</td>
-                        <td>JAVA SE</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="separator-line"></div>
-
-        <div id="experience" class="experience">
-            <h2><span class="first-letter">E</span>xperience
-                <i class="fab fa-earlybirds"></i>
-            </h2>
-            <ul class="content-margin">
-                <li class="job">
-                    <div class="job-header">
-                        <h3 class="title"> .NET DEVELOPER </h3>
-                        <h3 class="company"> ROYAL SCIENTIFIC SOCIETY </h3>
-                        <h3 class="date-period"> 2019/FEB – PRESENT </h3>
-                    </div>
-                    <h5 class="address"> AMMAN, AL JUBAIHA - AHMAD AL TARAWNEH ST BLDNG.70</h5>
-                    <ul class="duties">
-                        <li class="duty"> Development and Integration of an Educational System using .Net MVC and other Web Development Technologies.</li>
-                    </ul>
-                </li>
-                <div class="half-line"></div>
-
-                <li class="job">
-                    <div class="job-header">
-                        <h3 class="title"> FULL-STACK JUNIOR DEVELOPER</h3>
-                        <h3 class="company"> ESKADENIA</h3>
-                        <h3 class="date-period"> 2018/DEC – 2019/FEB</h3>
-                    </div>
-                    <h5 class="address"> AMMAN, AL MEDINA AL MUNAWARA ST.</h5>
-                    <ul class="duties">
-                        <li class="duty"> Development and Integration of a Finance Cloud System using Angular 2+ & .NET Technologies.</li>
-                    </ul>
-                </li>
-                <div class="half-line"></div>
-
-                <li class="job">
-                    <div class="job-header">
-                        <h3 class="title"> WEB DEVELOPER </h3>
-                        <h3 class="company"> ROYAL SOFT </h3>
-                        <h3 class="date-period"> 2018/JUNE – 2018/NOV</h3>
-                    </div>
-                    <h5 class="address"> AMMAN, QUEEN RANIA AL ABDULLAH ST</h5>
-                    <ul class="duties">
-                        <li class="duty"> Develop and maintain Websites and APIs using .NET Technologies.</li>
-                        <li class="duty"> Train and assist employees in their tasks.</li>
-                    </ul>
-                </li>
+                  <li>
+                    Basic Functions included Exporting data to: Excel, CSV and
+                    PDF.
+                  </li>
+                  <li>Ability to Add Charts for the data.</li>
+                  <li>
+                    Adding any new Functionality to the Search page will add it
+                    to all other pages without the need to modify it anywhere
+                    else.
+                  </li>
+                </ul>
+              </li>
             </ul>
-        </div>
+          </li>
+          <div class="half-line"></div>
 
-        <div class="separator-line"></div>
+          <li class="job">
+            <div class="job-header">
+              <h3 class="title">FULL-STACK JUNIOR DEVELOPER</h3>
+              <h3 class="company">ESKADENIA</h3>
+              <h3 class="date-period">2018/DEC – 2019/FEB</h3>
+            </div>
+            <h5 class="address">AMMAN, AL MEDINA AL MUNAWARA ST.</h5>
+            <ul class="duties">
+              <li class="duty">
+                Development and Integration of a Finance Cloud System using
+                Angular 2+ & .NET Technologies.
+              </li>
+            </ul>
+          </li>
+          <div class="half-line"></div>
 
-        <div id="education" class="education">
-            <h2><span class="first-letter">E</span>DUCATION
-                <i class="fas fa-graduation-cap"></i>
-            </h2>
-            <ul class="content-margin">
-                <li>
+          <li class="job">
+            <div class="job-header">
+              <h3 class="title">WEB DEVELOPER</h3>
+              <h3 class="company">ROYAL SOFT</h3>
+              <h3 class="date-period">2018/JUNE – 2018/NOV</h3>
+            </div>
+            <h5 class="address">AMMAN, QUEEN RANIA AL ABDULLAH ST</h5>
+            <ul class="duties">
+              <li class="duty">
+                Develop and maintain Websites and APIs using .NET Technologies.
+              </li>
+              <li class="duty">Train and assist employees in their tasks.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="separator-line"></div>
+
+      <div id="education" class="education">
+        <h2>
+          <span class="first-letter">E</span>DUCATION
+          <i class="fas fa-graduation-cap"></i>
+        </h2>
+        <ul class="content-margin">
+          <!-- <li>
                     <div class="row">
                         <h3 class="left">PRINCESS SUMAYA FOR TECHNOLOGY</h3>
                         <h5 class="right">MASTER COMPUTER SCIENCE</h5>
@@ -144,68 +197,71 @@
                     </ul>
 
                 </li>
-                <div class="half-line"></div>
-                <li>
-                    <div class="row">
-                        <h3 class="left">AL ZAYTOONAH UNIVERSITY OF JORDAN</h3>
-                        <h5 class="right">BACHELOR COMPUTER SCIENCE </h5>
-                    </div>
-                    <div class="date-period">2014/ JUNE – 2018/JUNE</div>
-                    <ul>
-                        <li>Graduated with First class Honors</li>
-                        <li>GPA 91% </li>
-                        <li>Participated in ACM problem solving contest.</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="separator-line"></div>
-
-        <div id="languages" class="languages">
-            <h2><span class="first-letter">L</span>ANGUAGES
-                <i class="fas fa-language"></i>
-            </h2>
-            <ul class="content-margin">
-                <li>
-                    <dl>
-                        <dt>	ARABIC
-                        </dt>
-                        <dd> Native Speaker
-                        </dd>
-                        <dt>	ENGLISH
-                        </dt>
-                        <dd> very good; passed Jordan national English exam with 84%
-                        </dd>
-                    </dl>
-                </li>
-                <li></li>
-            </ul>
-        </div>
-
-        <div class="separator-line"></div>
-
-        <div id="references" class="references">
-            <h2> <span class="first-letter">R</span>EFERENCES
-                <i class="fas fa-anchor"></i></h2>
-            <h5 class="content-margin">Avaliable Upon Request</h5>
-        </div>
-
-        <div class="full-line"></div>
-
-        <footer>
-            <div class="social-media">
-                <a target="_blank" href="https://www.facebook.com/daglas4ever"> <i class="fab fa-facebook-f"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/mohdaghlas/"> <i class="fab fa-linkedin"></i></a>
-                <a target="_blank" href="https://github.com/daglas4ever"> <i class="fab fa-github"></i></a>
+                <div class="half-line"></div> -->
+          <li>
+            <div class="row">
+              <h3 class="left">AL ZAYTOONAH UNIVERSITY OF JORDAN</h3>
+              <h5 class="right">BACHELOR COMPUTER SCIENCE</h5>
             </div>
+            <div class="date-period">2014/ JUNE – 2018/JUNE</div>
+            <ul>
+              <li>Graduated with First class Honors</li>
+              <li>GPA 91%</li>
+              <li>Participated in ACM problem solving contest.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-            <div class="credits-parent">
+      <div class="separator-line"></div>
 
-                <div class="credits">Designed by Mohammad Daghlas 2019 &copy; </div>
-            </div>
-        </footer>
+      <div id="languages" class="languages">
+        <h2>
+          <span class="first-letter">L</span>ANGUAGES
+          <i class="fas fa-language"></i>
+        </h2>
+        <ul class="content-margin">
+          <li>
+            <dl>
+              <dt>ARABIC</dt>
+              <dd>Native Speaker</dd>
+              <dt>ENGLISH</dt>
+              <dd>very good; passed Jordan national English exam with 84%</dd>
+            </dl>
+          </li>
+          <li></li>
+        </ul>
+      </div>
+
+      <div class="separator-line"></div>
+
+      <div id="references" class="references">
+        <h2>
+          <span class="first-letter">R</span>EFERENCES
+          <i class="fas fa-anchor"></i>
+        </h2>
+        <h5 class="content-margin">Avaliable Upon Request</h5>
+      </div>
+
+      <div class="full-line"></div>
+
+      <footer>
+        <div class="social-media">
+          <a target="_blank" href="https://www.facebook.com/daglas4ever">
+            <i class="fab fa-facebook-f"></i
+          ></a>
+          <a target="_blank" href="https://www.linkedin.com/in/mohdaghlas/">
+            <i class="fab fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://github.com/daglas4ever">
+            <i class="fab fa-github"></i
+          ></a>
+        </div>
+
+        <div class="credits-parent">
+          <div class="credits">Designed by Mohammad Daghlas 2019 &copy;</div>
+        </div>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
