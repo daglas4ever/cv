@@ -247,8 +247,8 @@
 }
 
 .job > .address:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f3c5";
+  font-family: 'Font Awesome 5 Free';
+  content: '\f3c5';
   display: inline-block;
   padding-right: 3px;
   vertical-align: middle;
@@ -260,16 +260,17 @@
 }
 
 .duty:before {
-  content: "\2022";
+  content: '\2022';
   color: rgb(255, 123, 0);
   font-weight: bold;
   display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+}
+.duty {
+  margin-bottom: 10px;
 }
 
 .row:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
