@@ -328,8 +328,8 @@
   width: 28%;
   float: left;
   font-size: 13px;
-  font-weight: 500;
-  color: var(--text-muted);
+  font-weight: 600;
+  color: var(--accent-strong);
 }
 
 @media (max-width: 640px) {
@@ -431,8 +431,8 @@
   width: 35%;
   float: left;
   font-size: 13px;
-  font-weight: 500;
-  color: var(--text-muted);
+  font-weight: 600;
+  color: var(--accent-strong);
 }
 
 @media (max-width: 640px) {
@@ -504,7 +504,7 @@
   float: left;
   font-size: 13px;
   font-weight: 500;
-  color: var(--text-muted);
+  color: var(--accent-bright);
   margin: 0;
 }
 
