@@ -3,12 +3,12 @@
    ========================================================================== */
 
 :root {
-  /* Palette — deep orange + warm neutrals */
-  --accent: #ea580c; /* orange-600 */
-  --accent-strong: #c2410c; /* orange-700 */
-  --accent-bright: #f97316; /* orange-500 */
+  /* Palette — warm orange + stone neutrals */
+  --accent: #f97316; /* orange-500 */
+  --accent-strong: #ea580c; /* orange-600 */
+  --accent-bright: #fb923c; /* orange-400 */
   --accent-soft: #fff7ed; /* orange-50 */
-  --accent-tint: rgba(234, 88, 12, 0.1);
+  --accent-tint: rgba(249, 115, 22, 0.12);
   --accent-border: #fed7aa; /* orange-200 */
 
   --text: #1c1917; /* stone-900 */
