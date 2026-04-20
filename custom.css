@@ -259,6 +259,112 @@
   list-style: none;
 }
 
+.job-group-header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.job-group-header > .company {
+  text-align: left;
+  width: 65%;
+  float: left;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.job-group-header > .company:hover {
+  animation: bounce-up 0.7s infinite;
+}
+
+.job-group-header > .date-period {
+  text-align: right;
+  width: 35%;
+  color: rgba(255, 153, 0, 0.911);
+  float: left;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0.06em;
+  -webkit-text-stroke-color: rgba(255, 153, 0, 0.911);
+}
+
+.company-description {
+  font-style: italic;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 3vw;
+}
+
+.roles {
+  list-style: none;
+  padding-left: 3vw;
+  border-left: 2px solid rgba(255, 153, 0, 0.4);
+  margin-left: 1vw;
+}
+
+.role {
+  position: relative;
+  padding-left: 1vw;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.role:before {
+  content: '';
+  position: absolute;
+  left: calc(-3vw - 6px);
+  top: 0.5em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f90;
+}
+
+.role-header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.role-header > .title {
+  text-align: left;
+  width: 65%;
+  float: left;
+  margin: 0;
+}
+
+.role-header > .date-period {
+  text-align: right;
+  width: 35%;
+  color: rgba(255, 153, 0, 0.911);
+  float: left;
+  margin: 0;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 0.06em;
+  -webkit-text-stroke-color: rgba(255, 153, 0, 0.911);
+}
+
+@media (max-width: 500px) {
+  .job-group-header > .company {
+    width: 100%;
+    float: none;
+    text-align: left;
+  }
+  .job-group-header > .date-period {
+    width: 100%;
+    float: none;
+    text-align: left;
+  }
+  .role-header > .title {
+    width: 100%;
+    float: none;
+  }
+  .role-header > .date-period {
+    width: 100%;
+    float: none;
+    text-align: left;
+  }
+}
+
 .duty:before {
   content: '\2022';
   color: rgb(255, 123, 0);
