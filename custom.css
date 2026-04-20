@@ -431,8 +431,8 @@
   width: 35%;
   float: left;
   font-size: 13px;
-  font-weight: 600;
-  color: var(--accent-strong);
+  font-weight: 500;
+  color: var(--accent-bright);
 }
 
 @media (max-width: 640px) {
