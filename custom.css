@@ -3,7 +3,7 @@
    ========================================================================== */
 
 :root {
-  /* Palette — warm orange + stone neutrals */
+  /* Palette - warm orange + stone neutrals */
   --accent: #f97316; /* orange-500 */
   --accent-strong: #ea580c; /* orange-600 */
   --accent-bright: #fb923c; /* orange-400 */
@@ -421,7 +421,7 @@
 }
 
 /* ==========================================================================
-   Experience — grouped (promotion track)
+   Experience - grouped (promotion track)
    ========================================================================== */
 
 .job-group {
@@ -853,7 +853,7 @@ i.far {
     line-height: 1.35;
   }
 
-  /* Dividers — quieter */
+  /* Dividers - quieter */
   .full-line {
     background: var(--accent);
     height: 1.5pt;
@@ -880,7 +880,7 @@ i.far {
     page-break-after: avoid;
   }
 
-  /* Pills — quieter */
+  /* Pills - quieter */
   .pill {
     background: #fff;
     border: 1px solid var(--accent);
@@ -925,7 +925,7 @@ i.far {
     color: #000;
   }
 
-  /* Social media — show as text for print */
+  /* Social media - show as text for print */
   .social-media {
     gap: 14px;
     margin-top: 8px;
