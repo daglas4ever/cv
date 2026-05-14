@@ -545,6 +545,59 @@
 }
 
 /* ==========================================================================
+   Earlier roles (compact list)
+   ========================================================================== */
+
+.earlier-roles {
+  list-style: none;
+  margin: var(--s-2) 0 0 0;
+  padding-left: var(--s-5);
+}
+
+.earlier-role {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-3);
+  padding: var(--s-1) 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.earlier-role__title {
+  flex: 0 0 auto;
+  color: var(--text);
+}
+
+.earlier-role__company {
+  flex: 1 1 auto;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.earlier-role__company:hover {
+  color: var(--accent-strong);
+}
+
+.earlier-role__date {
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent-bright);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .earlier-role {
+    flex-wrap: wrap;
+    gap: var(--s-1) var(--s-2);
+  }
+  .earlier-role__company {
+    flex: 1 1 100%;
+  }
+}
+
+/* ==========================================================================
    Education
    ========================================================================== */
 
