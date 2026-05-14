@@ -28,6 +28,29 @@
             Print
           </button>
 
+          <div
+            class="no-print mode-toggle"
+            role="group"
+            aria-label="CV design mode"
+          >
+            <button
+              type="button"
+              id="mode-creative"
+              class="mode-toggle__btn mode-toggle__btn--active"
+              aria-pressed="true"
+            >
+              Creative
+            </button>
+            <button
+              type="button"
+              id="mode-professional"
+              class="mode-toggle__btn"
+              aria-pressed="false"
+            >
+              Professional
+            </button>
+          </div>
+
           <h1 class="name">
             <span class="first-letter">M</span>OHAMMAD
             <span class="first-letter">D</span>AGHLAS
@@ -526,5 +549,47 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      (function () {
+        var body = document.body;
+        var creativeBtn = document.getElementById('mode-creative');
+        var professionalBtn = document.getElementById('mode-professional');
+        if (!creativeBtn || !professionalBtn) return;
+
+        function setMode(mode) {
+          var isProfessional = mode === 'professional';
+          body.classList.toggle('cv-mode--professional', isProfessional);
+          creativeBtn.classList.toggle(
+            'mode-toggle__btn--active',
+            !isProfessional
+          );
+          creativeBtn.setAttribute('aria-pressed', String(!isProfessional));
+          professionalBtn.classList.toggle(
+            'mode-toggle__btn--active',
+            isProfessional
+          );
+          professionalBtn.setAttribute(
+            'aria-pressed',
+            String(isProfessional)
+          );
+          try {
+            localStorage.setItem('cv-mode', mode);
+          } catch (e) {}
+        }
+
+        creativeBtn.addEventListener('click', function () {
+          setMode('creative');
+        });
+        professionalBtn.addEventListener('click', function () {
+          setMode('professional');
+        });
+
+        try {
+          var saved = localStorage.getItem('cv-mode');
+          if (saved === 'professional') setMode('professional');
+        } catch (e) {}
+      })();
+    </script>
   </body>
 </html>

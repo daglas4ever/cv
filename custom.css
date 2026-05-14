@@ -774,6 +774,170 @@ i.far {
 }
 
 /* ==========================================================================
+   Design-mode toggle
+   ========================================================================== */
+
+.mode-toggle {
+  float: right;
+  display: inline-flex;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+  margin-top: var(--s-1);
+}
+
+.mode-toggle__btn {
+  appearance: none;
+  border: 0;
+  padding: var(--s-1) var(--s-3);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.mode-toggle__btn:hover {
+  color: var(--text);
+  background-color: var(--accent-soft);
+}
+
+.mode-toggle__btn--active,
+.mode-toggle__btn--active:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .mode-toggle {
+    float: none;
+    display: flex;
+    width: fit-content;
+    margin: var(--s-2) auto 0;
+  }
+}
+
+/* ==========================================================================
+   Professional mode overrides
+   ========================================================================== */
+
+body.cv-mode--professional {
+  /* Conservative palette: deep slate replacing the orange accents */
+  --accent: #1e293b; /* slate-800 */
+  --accent-strong: #0f172a; /* slate-900 */
+  --accent-bright: #475569; /* slate-600 */
+  --accent-soft: #f1f5f9; /* slate-100 */
+  --accent-tint: rgba(30, 41, 59, 0.08);
+  --accent-border: #cbd5e1; /* slate-300 */
+}
+
+/* Kill animations */
+body.cv-mode--professional .container,
+body.cv-mode--professional .name,
+body.cv-mode--professional .personal-info {
+  animation: none;
+}
+
+body.cv-mode--professional .container *,
+body.cv-mode--professional .container *::before,
+body.cv-mode--professional .container *::after {
+  animation: none !important;
+}
+
+/* Name reads LTR, no slide-in */
+body.cv-mode--professional .name {
+  direction: ltr;
+}
+
+/* Hide decorative section icons */
+body.cv-mode--professional .objective-title > i,
+body.cv-mode--professional .container > div > h2 > i {
+  display: none;
+}
+
+/* Quieter section header underline */
+body.cv-mode--professional .container > div > h2,
+body.cv-mode--professional .objective-title {
+  border-bottom-color: var(--accent-border);
+}
+
+/* Solid divider, no gradient */
+body.cv-mode--professional .full-line {
+  background: var(--accent);
+}
+
+/* Outline-only pills */
+body.cv-mode--professional .pill {
+  background-color: transparent;
+  color: var(--text);
+  border-color: var(--accent-border);
+}
+
+body.cv-mode--professional .pill:hover {
+  background-color: var(--accent);
+  color: white;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Present badge becomes a subtle outlined chip */
+body.cv-mode--professional .present-badge {
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+/* Role timeline dots in slate */
+body.cv-mode--professional .role:before {
+  background-color: var(--accent);
+}
+
+body.cv-mode--professional .role--current:before {
+  box-shadow: 0 0 0 4px var(--accent-tint);
+}
+
+/* Footer social icons become flat */
+body.cv-mode--professional .social-media > a {
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  font-size: 22px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+body.cv-mode--professional .social-media > a:hover {
+  background-color: transparent;
+  transform: none;
+  box-shadow: none;
+}
+
+body.cv-mode--professional .social-media > a:hover > i {
+  color: var(--accent-strong);
+  -webkit-text-fill-color: var(--accent-strong);
+}
+
+/* Disable company-name bounce */
+body.cv-mode--professional .job-header > .company:hover {
+  animation: none;
+}
+
+/* Map pin icon on addresses matches palette */
+body.cv-mode--professional .job > .address:before,
+body.cv-mode--professional .job-group > .address:before {
+  color: var(--accent-bright);
+}
+
+/* Contact-row icons follow palette */
+body.cv-mode--professional .contact-item > i {
+  color: var(--accent);
+  -webkit-text-fill-color: var(--accent);
+}
+
+/* ==========================================================================
    Print stylesheet
    ========================================================================== */
 
