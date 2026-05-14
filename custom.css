@@ -548,6 +548,16 @@
    Earlier roles (compact list)
    ========================================================================== */
 
+/* Header proportions: no company column, so title + date span 100% */
+.job--earlier > .job-header > .title {
+  width: 65%;
+}
+
+.job--earlier > .job-header > .date-period {
+  width: 35%;
+  padding-left: 0;
+}
+
 .earlier-roles {
   list-style: none;
   margin: var(--s-2) 0 0 0;
